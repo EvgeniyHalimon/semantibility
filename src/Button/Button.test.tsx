@@ -9,16 +9,19 @@ test('renders the Rating component', () => {
     </Button>,
   );
 
-  console.log(screen.getByText('Submit'));
+  const button = screen.getByRole('button')
 
-  expect(screen.getByText('Submit')).toBeInTheDocument();
+  expect(button).toBeInTheDocument();
 
-  expect(screen.getByRole('button')).toHaveAttribute(
+  expect(button).toHaveAttribute(
     'aria-label',
     'Submit registration form',
   );
 
-  expect(screen.getByRole('button')).not.toBeDisabled();
+  expect(button).toHaveAttribute(
+    'aria-disabled',
+    "false",
+  );
 
-  expect(screen.getByRole('button')).toHaveTextContent('Submit');
+  expect(button).toHaveTextContent('Submit');
 });

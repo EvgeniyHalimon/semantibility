@@ -1,4 +1,4 @@
-require('@testing-library/jest-dom');
+
 
 module.exports = {
   testEnvironment: 'jsdom',
@@ -8,4 +8,5 @@ module.exports = {
   transform: {
     '^.+\\.(js|jsx|ts|tsx)$': 'babel-jest',
   },
+  setupFilesAfterEnv: ['./src/setupTests.ts'], 
 };
