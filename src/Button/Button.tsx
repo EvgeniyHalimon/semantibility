@@ -1,3 +1,4 @@
+import React from 'react';
 import { ButtonHTMLAttributes, ReactNode } from 'react';
 
 interface IButton extends ButtonHTMLAttributes<HTMLButtonElement> {
