@@ -1,0 +1,39 @@
+{
+  "name": "semantibility",
+  "version": "0.0.1",
+  "description": "Library of semantic and accessible components",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "npm run test",
+    "rollup": "rollup -c --bundleConfigAsCjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvgeniyHalimon/semantibility.git"
+  },
+  "keywords": [
+    "Semantic",
+    "Accessibility"
+  ],
+  "author": "Evginiy Halimon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EvgeniyHalimon/semantibility/issues"
+  },
+  "homepage": "https://github.com/EvgeniyHalimon/semantibility#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@types/react": "^19.0.1",
+    "rollup": "^4.28.1",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "tslib": "^2.8.1",
+    "typescript": "^5.7.2"
+  }
+}
