@@ -1,5 +1,4 @@
-import React from 'react';
-import { ButtonHTMLAttributes, ReactNode } from 'react';
+import React, { ButtonHTMLAttributes, ReactNode } from 'react';
 
 interface IButton extends ButtonHTMLAttributes<HTMLButtonElement> {
   type: 'button' | 'reset' | 'submit';
@@ -38,7 +37,8 @@ export const Button = ({
       disabled={disabled}
       aria-label={props['aria-label'] ?? ariaLabel}
       aria-disabled={props['aria-disabled'] ?? disabled}
-      {...props}>
+      {...props}
+    >
       {children}
     </button>
   );
