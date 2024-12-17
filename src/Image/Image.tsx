@@ -1,6 +1,6 @@
 import React, { ImgHTMLAttributes } from 'react';
 
-interface IImage extends ImgHTMLAttributes<HTMLImageElement> {
+export interface IImage extends ImgHTMLAttributes<HTMLImageElement> {
   src: string;
   alt: string;
   ariaHidden: boolean;
