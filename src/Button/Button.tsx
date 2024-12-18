@@ -35,8 +35,8 @@ export const Button = ({
     <button
       type={type}
       disabled={disabled}
-      aria-label={props['aria-label'] ?? ariaLabel}
-      aria-disabled={props['aria-disabled'] ?? disabled}
+      aria-label={ariaLabel}
+      aria-disabled={disabled}
       {...props}
     >
       {children}

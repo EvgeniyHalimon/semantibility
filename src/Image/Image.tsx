@@ -34,8 +34,8 @@ export const Image = ({
     <img
       src={src}
       alt={alt}
-      aria-hidden={props['aria-hidden'] ?? ariaHidden}
-      aria-label={props['aria-label'] ?? ariaLabel}
+      aria-hidden={ariaHidden}
+      aria-label={ariaLabel}
       {...props}
     />
   );
